@@ -1,6 +1,6 @@
 import "tailwindcss/tailwind.css";
-import { techStack } from "./resources/History";
-import { projects } from "./resources/History";
+import { techStack } from "../public/resources/History";
+import { projects } from "../public/resources/History";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
