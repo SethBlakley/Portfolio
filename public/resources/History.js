@@ -104,7 +104,7 @@ export const projects = [
   },
   {
     icon: AcademicCapIcon,
-    name: "Me and tracy",
+    name: "Github UserCard",
     href: "#",
     iconForeground: "text-indigo-700",
     iconBackground: "bg-indigo-50",
