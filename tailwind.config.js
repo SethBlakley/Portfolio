@@ -1,7 +1,10 @@
 module.exports = {
-    purge: ['./pages/**/*.tsx', './styles/**/*.css'],
-    future: {
-        removeDepreciatedGapUtilities: true,
-        purgeLayerByDefault: true,
-    }
-}
+  purge: [
+    "./src/components/**/*.{js,ts,jsx,tsx}",
+    "./src/pages/**/*.{js,ts,jsx,tsx}",
+  ],
+  future: {
+    removeDepreciatedGapUtilities: true,
+    purgeLayerByDefault: true,
+  },
+};
