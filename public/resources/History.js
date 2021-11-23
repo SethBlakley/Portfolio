@@ -149,6 +149,8 @@ export const projects = [
     madeWith: [
       { tech: "MongoDB", color: Colors("MongoDB") },
       { tech: "React", color: Colors("React") },
+      { tech: "React", color: Colors("React") },
+      { tech: "React", color: Colors("React") },
     ],
   },
   {
