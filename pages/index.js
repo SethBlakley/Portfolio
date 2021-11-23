@@ -1,4 +1,6 @@
 import "tailwindcss/tailwind.css";
+import Image from "next/image";
+import sbLogo1 from "../public/images/sbLogo1.png";
 import { techStack } from "../public/resources/History";
 import { projects } from "../public/resources/History";
 
@@ -8,36 +10,40 @@ function classNames(...classes) {
 
 export default function Home() {
   return (
-    <div>
-      <div className="flex justify-center py-5 bg-yellow-400">
-        Currently Under Construction
-      </div>
-      <div className="flex flex-col h-full bg-gray-800 sm:pt-2 sm:px-5 ">
-        <div
-          className="bg-top bg-cover border-t-2 border-l-2 border-r-2 border-gray-900 rounded-t-lg md:pb-80"
+    <main>
+      <div className="flex flex-col px-5 py-2 bg-gray-800 ">
+        <section
+          className="h-screen bg-top bg-cover border-t-2 border-l-2 border-r-2 border-gray-900 rounded-t-lg"
           style={{
             backgroundImage:
               "linear-gradient(rgba(0,100,100,0.5), rgba(100, 00, 150, 0.5)), url(https://images.unsplash.com/photo-1618335829737-2228915674e0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)",
           }}
         >
-          <div className="w-40 pl-5">
-            <img
-              src="https://www.kadencewp.com/wp-content/uploads/2020/10/alogo-1.png"
-              alt="Girl in a jacket"
-            />
-          </div>
-          <div id="test" className="flex flex-col items-center w-full h-full">
-            <h1 className="flex mt-40 font-bold text-white text-7xl">
-              Seth Blakley
-            </h1>
-            <div className="py-5 text-2xl font-bold text-white">
-              Software Engineer
+          <div className="flex justify-center w-full lg:justify-start">
+            <div className="mt-32 lg:mt-5 lg:ml-10">
+              <Image src={sbLogo1} alt="Home Page" width={150} height={150} />
             </div>
-            <button className="px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700">
-              See Projects
-            </button>
           </div>
-        </div>
+
+          <div className="flex flex-col items-center h-full pt-10 lg:pt-40">
+            <div className="flex flex-col items-center justify-center p-5 bg-gray-500 border-4 border-white border-solid rounded-xl">
+              <h1 className="flex text-white text-7xl">Seth Blakley</h1>
+              <div className="pt-2 pb-5 text-2xl text-white">
+                Software Engineer
+              </div>
+              <button
+                className="px-4 py-2 font-bold text-white transition-colors ease-in-out bg-blue-500 rounded hover:bg-blue-700"
+                onClick={() => {
+                  document
+                    .getElementById("projects")
+                    .scrollIntoView({ behavior: "smooth" });
+                }}
+              >
+                See Projects
+              </button>
+            </div>
+          </div>
+        </section>
 
         <div
           id="bgbg"
@@ -49,7 +55,7 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="flex flex-wrap justify-center">
+          <section className="flex flex-wrap justify-center">
             <div className="flex flex-wrap justify-center mt-12 sm:flex-col lg:flex-row">
               {techStack.map((post) => (
                 <div className="flex flex-col m-2 overflow-hidden rounded-lg shadow-lg w-96">
@@ -80,9 +86,13 @@ export default function Home() {
                 </div>
               ))}
             </div>
-          </div>
+          </section>
 
-          <section aria-labelledby="quick-links-title" className="pt-10">
+          <section
+            aria-labelledby="quick-links-title"
+            id="projects"
+            className="pt-10"
+          >
             <div className="mb-2 overflow-hidden bg-gray-200 divide-y divide-gray-200 rounded-lg shadow-xl md:divide-y-0 md:grid md:grid-cols-2 md:gap-px">
               {projects.map((action, actionIdx) => (
                 <div
@@ -143,6 +153,6 @@ export default function Home() {
           </section>
         </div>
       </div>
-    </div>
+    </main>
   );
 }
