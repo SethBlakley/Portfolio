@@ -11,7 +11,7 @@ function classNames(...classes) {
 export default function Home() {
   return (
     <main>
-      <div className="flex flex-col px-5 py-2 bg-gray-800 ">
+      <div className="flex flex-col py-2 bg-gray-800 md:px-5 ">
         <section
           className="h-screen bg-top bg-cover border-t-2 border-l-2 border-r-2 border-gray-900 rounded-t-lg"
           style={{
@@ -26,7 +26,10 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col items-center h-full pt-10 lg:pt-40">
-            <div className="flex flex-col items-center justify-center p-5 bg-gray-500 border-4 border-white border-solid rounded-xl">
+            <div
+              id="name-tag"
+              className="flex flex-col items-center justify-center p-5 bg-gray-500 border-4 border-white border-solid rounded-xl"
+            >
               <h1 className="flex text-white text-7xl">Seth Blakley</h1>
               <div className="pt-2 pb-5 text-2xl text-white">
                 Software Engineer
@@ -45,10 +48,7 @@ export default function Home() {
           </div>
         </section>
 
-        <div
-          id="bgbg"
-          className="relative px-4 pt-16 bg-gray-100 border-b-2 border-l-2 border-r-2 border-gray-900 rounded-b-lg md:mb-20 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8"
-        >
+        <div className="relative px-4 pt-16 bg-gray-100 border-b-2 border-l-2 border-r-2 border-gray-900 rounded-b-lg md:mb-20 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
           <div className="text-center">
             <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
               FRONT END FOCUSED <br></br> WITH FULL STACK EXPERIENCE
@@ -117,7 +117,7 @@ export default function Home() {
                         "rounded-lg inline-flex p-3 ring-4 ring-red"
                       )}
                     >
-                      <action.icon className="w-6 h-6" aria-hidden="true" />
+                      <action.icon className="w-32 h-6" aria-hidden="true" />
                     </span>
                   </div>
                   <div className="mt-8">
@@ -128,11 +128,18 @@ export default function Home() {
                         {action.name}
                       </a>
                     </h3>
-                    <p className="mt-2 text-sm text-gray-500">
-                      Doloribus dolores nostrum quia qui natus officia quod et
-                      dolorem. Sit repellendus qui ut at blanditiis et quo et
-                      molestiae.
-                    </p>
+                    <p className="mt-2 text-sm text-gray-500">{action.about}</p>
+                  </div>
+                  <div className="flex">
+                    {action.madeWith.map((madeWith) => {
+                      return (
+                        <div
+                          className={`flex w-32 justify-center items-center mr-2 mt-2 rounded-2xl border-solid border-black border-2 p-2 ${madeWith.color}`}
+                        >
+                          {madeWith.tech}
+                        </div>
+                      );
+                    })}
                   </div>
                   <span
                     className="absolute text-gray-300 pointer-events-none top-6 right-6 group-hover:text-gray-400"

@@ -13,7 +13,7 @@ export default function loopweb() {
       <div class="reactplayer">
         <ReactPlayer
           className="overflow-hidden border-2 border-red-500 rounded-lg"
-          url="https://www.youtube.com/watch?v=p55POqbf8yE"
+          url=""
           playing={true}
           loop={true}
           width="100%"

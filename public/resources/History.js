@@ -38,6 +38,14 @@ export const techStack = [
   },
 ];
 
+export const Colors = (tech) => {
+  if (tech == "MongoDB") {
+    return "bg-red-100";
+  } else if (tech == "React") {
+    return "bg-blue-100";
+  }
+};
+
 export const projects = [
   {
     icon: ClockIcon,
@@ -45,6 +53,12 @@ export const projects = [
     href: "http://localhost:3000/loopweb",
     iconForeground: "text-teal-700",
     iconBackground: "bg-teal-50",
+    about:
+      "Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiaedd.",
+    madeWith: [
+      { tech: "MongoDB", color: Colors("MongoDB") },
+      { tech: "React", color: Colors("React") },
+    ],
   },
   {
     icon: BadgeCheckIcon,
@@ -52,6 +66,12 @@ export const projects = [
     href: "http://localhost:3000/loopmobile",
     iconForeground: "text-purple-700",
     iconBackground: "bg-purple-50",
+    about:
+      "Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiaedd.",
+    madeWith: [
+      { tech: "MongoDB", color: Colors("MongoDB") },
+      { tech: "React", color: Colors("React") },
+    ],
   },
   {
     icon: UsersIcon,
@@ -59,6 +79,12 @@ export const projects = [
     href: "http://localhost:3000/",
     iconForeground: "text-sky-700",
     iconBackground: "bg-sky-50",
+    about:
+      "Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiaedd.",
+    madeWith: [
+      { tech: "MongoDB", color: Colors("MongoDB") },
+      { tech: "React", color: Colors("React") },
+    ],
   },
   {
     icon: CashIcon,
@@ -66,6 +92,12 @@ export const projects = [
     href: "#",
     iconForeground: "text-yellow-700",
     iconBackground: "bg-yellow-50",
+    about:
+      "Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiaedd.",
+    madeWith: [
+      { tech: "MongoDB", color: Colors("MongoDB") },
+      { tech: "React", color: Colors("React") },
+    ],
   },
   {
     icon: ReceiptRefundIcon,
@@ -73,6 +105,12 @@ export const projects = [
     href: "#",
     iconForeground: "text-rose-700",
     iconBackground: "bg-rose-50",
+    about:
+      "Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiaedd.",
+    madeWith: [
+      { tech: "MongoDB", color: Colors("MongoDB") },
+      { tech: "React", color: Colors("React") },
+    ],
   },
   {
     icon: AcademicCapIcon,
@@ -80,6 +118,12 @@ export const projects = [
     href: "#",
     iconForeground: "text-indigo-700",
     iconBackground: "bg-indigo-50",
+    about:
+      "Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiaedd.",
+    madeWith: [
+      { tech: "MongoDB", color: Colors("MongoDB") },
+      { tech: "React", color: Colors("React") },
+    ],
   },
   {
     icon: ReceiptRefundIcon,
@@ -87,6 +131,12 @@ export const projects = [
     href: "#",
     iconForeground: "text-rose-700",
     iconBackground: "bg-rose-50",
+    about:
+      "Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiaedd.",
+    madeWith: [
+      { tech: "MongoDB", color: Colors("MongoDB") },
+      { tech: "React", color: Colors("React") },
+    ],
   },
   {
     icon: AcademicCapIcon,
@@ -94,6 +144,12 @@ export const projects = [
     href: "#",
     iconForeground: "text-indigo-700",
     iconBackground: "bg-indigo-50",
+    about:
+      "Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiaedd.",
+    madeWith: [
+      { tech: "MongoDB", color: Colors("MongoDB") },
+      { tech: "React", color: Colors("React") },
+    ],
   },
   {
     icon: ReceiptRefundIcon,
@@ -101,6 +157,12 @@ export const projects = [
     href: "#",
     iconForeground: "text-rose-700",
     iconBackground: "bg-rose-50",
+    about:
+      "Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiaedd.",
+    madeWith: [
+      { tech: "MongoDB", color: Colors("MongoDB") },
+      { tech: "React", color: Colors("React") },
+    ],
   },
   {
     icon: AcademicCapIcon,
@@ -108,5 +170,11 @@ export const projects = [
     href: "#",
     iconForeground: "text-indigo-700",
     iconBackground: "bg-indigo-50",
+    about:
+      "Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiaedd.",
+    madeWith: [
+      { tech: "MongoDB", color: Colors("MongoDB") },
+      { tech: "React", color: Colors("React") },
+    ],
   },
 ];
