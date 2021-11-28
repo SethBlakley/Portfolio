@@ -65,7 +65,7 @@ export const projects = [
   {
     icon: parlaylogo,
     name: "Parlay",
-    href: "#",
+    href: "http://localhost:3000/parlay",
     iconForeground: "text-rose-700",
     iconBackground: "bg-blue-100",
     about:
