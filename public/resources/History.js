@@ -33,7 +33,7 @@ export const techStack = [
   },
 ];
 
-export const Colors = (tech) => {
+const Colors = (tech) => {
   if (tech == "MongoDB") {
     return "bg-red-100";
   } else if (tech == "React") {
