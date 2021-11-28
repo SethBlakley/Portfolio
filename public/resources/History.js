@@ -1,11 +1,6 @@
-import {
-  AcademicCapIcon,
-  BadgeCheckIcon,
-  CashIcon,
-  ClockIcon,
-  ReceiptRefundIcon,
-  UsersIcon,
-} from "@heroicons/react/outline";
+import parlaylogo from "../images/parlaylogo.png";
+import looplogo from "../images/logo_icon.png";
+import helogo from "../images/helogo.png";
 
 export const techStack = [
   {
@@ -43,38 +38,91 @@ export const Colors = (tech) => {
     return "bg-red-100";
   } else if (tech == "React") {
     return "bg-blue-100";
+  } else if (tech == "Tailwind") {
+    return "bg-yellow-200";
+  } else if (tech == "AWS") {
+    return "bg-yellow-300";
+  } else if (tech == "Next") {
+    return "bg-gray-200";
+  } else if (tech == "Firebase") {
+    return "bg-blue-400";
+  } else if (tech == "Flutter") {
+    return "bg-green-200";
+  } else if (tech == "Dart") {
+    return "bg-blue-500";
+  } else if (tech == "C++") {
+    return "bg-blue-300";
+  } else if (tech == "Python") {
+    return "bg-red-400";
+  } else if (tech == "Django") {
+    return "bg-green-400";
   }
 };
 
+const React = "bg-green-200";
+
 export const projects = [
   {
-    icon: ClockIcon,
-    name: "Loop Media Web",
-    href: "http://localhost:3000/loopweb",
-    iconForeground: "text-teal-700",
-    iconBackground: "bg-teal-50",
+    icon: parlaylogo,
+    name: "Parlay",
+    href: "#",
+    iconForeground: "text-rose-700",
+    iconBackground: "bg-blue-100",
     about:
-      "Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiaedd.",
+      "A multi-platform video game casino and server host. Bet on yourself, your favorite streamer, play 1v1, or own your own server. Built with...",
     madeWith: [
+      { tech: "Tailwind", color: Colors("Tailwind") },
+      { tech: "React", color: React },
       { tech: "MongoDB", color: Colors("MongoDB") },
-      { tech: "React", color: Colors("React") },
+      { tech: "AWS", color: Colors("AWS") },
     ],
   },
   {
-    icon: BadgeCheckIcon,
+    icon: looplogo,
+    name: "Loop Media Web",
+    href: "http://localhost:3000/loopweb",
+    iconForeground: "text-teal-700",
+    iconBackground: "bg-blue-100",
+    about:
+      "A journalistic social media application bridging the gap between internationl issues and the public. Built with...",
+    madeWith: [
+      { tech: "Tailwind", color: Colors("Tailwind") },
+      { tech: "Next", color: Colors("Next") },
+      { tech: "Firebase", color: Colors("Firebase") },
+    ],
+  },
+  {
+    icon: looplogo,
     name: "Loop Media Moble",
     href: "http://localhost:3000/loopmobile",
     iconForeground: "text-purple-700",
     iconBackground: "bg-purple-50",
     about:
-      "Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiaedd.",
+      "A journalistic social media application bridging the gap between internationl issues and the public. Built with...",
     madeWith: [
-      { tech: "MongoDB", color: Colors("MongoDB") },
-      { tech: "React", color: Colors("React") },
+      { tech: "Flutter", color: Colors("Flutter") },
+      { tech: "Dart", color: Colors("Dart") },
+      { tech: "Firebase", color: Colors("Firebase") },
     ],
   },
   {
-    icon: UsersIcon,
+    icon: helogo,
+    name: "Helpful Engineering",
+    href: "#",
+    iconForeground: "text-indigo-700",
+    iconBackground: "bg-indigo-50",
+    about:
+      "A clinical ventilation system bringing open source software to the medical industry. Built with...",
+    madeWith: [
+      { tech: "Tailwind", color: Colors("Tailwind") },
+      { tech: "React", color: Colors("React") },
+      { tech: "C++", color: Colors("C++") },
+      { tech: "Python", color: Colors("Python") },
+      { tech: "Django", color: Colors("Django") },
+    ],
+  },
+  {
+    icon: parlaylogo,
     name: "Fitness Center",
     href: "http://localhost:3000/",
     iconForeground: "text-sky-700",
@@ -87,7 +135,7 @@ export const projects = [
     ],
   },
   {
-    icon: CashIcon,
+    icon: parlaylogo,
     name: "Potluck",
     href: "#",
     iconForeground: "text-yellow-700",
@@ -100,7 +148,7 @@ export const projects = [
     ],
   },
   {
-    icon: ReceiptRefundIcon,
+    icon: parlaylogo,
     name: "Enciv",
     href: "#",
     iconForeground: "text-rose-700",
@@ -113,65 +161,11 @@ export const projects = [
     ],
   },
   {
-    icon: AcademicCapIcon,
-    name: "Helpful Engineering",
-    href: "#",
-    iconForeground: "text-indigo-700",
-    iconBackground: "bg-indigo-50",
-    about:
-      "Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiaedd.",
-    madeWith: [
-      { tech: "MongoDB", color: Colors("MongoDB") },
-      { tech: "React", color: Colors("React") },
-    ],
-  },
-  {
-    icon: ReceiptRefundIcon,
+    icon: parlaylogo,
     name: "Games Library",
     href: "#",
     iconForeground: "text-rose-700",
     iconBackground: "bg-rose-50",
-    about:
-      "Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiaedd.",
-    madeWith: [
-      { tech: "MongoDB", color: Colors("MongoDB") },
-      { tech: "React", color: Colors("React") },
-    ],
-  },
-  {
-    icon: AcademicCapIcon,
-    name: "Calculator",
-    href: "#",
-    iconForeground: "text-indigo-700",
-    iconBackground: "bg-indigo-50",
-    about:
-      "Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiaedd.",
-    madeWith: [
-      { tech: "MongoDB", color: Colors("MongoDB") },
-      { tech: "React", color: Colors("React") },
-      { tech: "React", color: Colors("React") },
-      { tech: "React", color: Colors("React") },
-    ],
-  },
-  {
-    icon: ReceiptRefundIcon,
-    name: "Parlay",
-    href: "#",
-    iconForeground: "text-rose-700",
-    iconBackground: "bg-rose-50",
-    about:
-      "Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiaedd.",
-    madeWith: [
-      { tech: "MongoDB", color: Colors("MongoDB") },
-      { tech: "React", color: Colors("React") },
-    ],
-  },
-  {
-    icon: AcademicCapIcon,
-    name: "Github UserCard",
-    href: "#",
-    iconForeground: "text-indigo-700",
-    iconBackground: "bg-indigo-50",
     about:
       "Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiaedd.",
     madeWith: [

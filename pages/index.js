@@ -117,7 +117,7 @@ export default function Home() {
                         "rounded-lg inline-flex p-3 ring-4 ring-red"
                       )}
                     >
-                      <action.icon className="w-32 h-6" aria-hidden="true" />
+                      <Image src={action.icon} height={50} width={50} />
                     </span>
                   </div>
                   <div className="mt-8">
