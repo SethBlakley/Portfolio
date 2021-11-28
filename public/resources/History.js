@@ -35,11 +35,11 @@ export const techStack = [
 
 const Colors = (tech) => {
   if (tech == "MongoDB") {
-    return "bg-red-100";
+    return "bg-blue-500";
   } else if (tech == "React") {
     return "bg-blue-100";
   } else if (tech == "Tailwind") {
-    return "bg-gray-200";
+    return "bg-yellow-200";
   } else if (tech == "AWS") {
     return "bg-yellow-300";
   } else if (tech == "Next") {
@@ -84,7 +84,7 @@ export const projects = [
     iconForeground: "text-teal-700",
     iconBackground: "bg-blue-100",
     about:
-      "A journalistic social media application bridging the gap between internationl issues and the public. Built with...",
+      "A journalistic social media application bridging the gap between international issues and the public. Built with...",
     madeWith: [
       { tech: "Tailwind", color: Colors("Tailwind") },
       { tech: "Next", color: Colors("Next") },
@@ -98,7 +98,7 @@ export const projects = [
     iconForeground: "text-purple-700",
     iconBackground: "bg-purple-50",
     about:
-      "A journalistic social media application bridging the gap between internationl issues and the public. Built with...",
+      "A journalistic social media application bridging the gap between international issues and the public. Built with...",
     madeWith: [
       { tech: "Flutter", color: Colors("Flutter") },
       { tech: "Dart", color: Colors("Dart") },
