@@ -39,7 +39,7 @@ const Colors = (tech) => {
   } else if (tech == "React") {
     return "bg-blue-100";
   } else if (tech == "Tailwind") {
-    return "bg-yellow-200";
+    return "bg-gray-200";
   } else if (tech == "AWS") {
     return "bg-yellow-300";
   } else if (tech == "Next") {
