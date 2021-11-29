@@ -71,7 +71,7 @@ export const projects = [
     about:
       "A multi-platform video game casino and server host. Bet on yourself, your favorite streamer, play 1v1, or own your own server. Built with...",
     madeWith: [
-      { tech: "Tailwind", color: Colors("Tailwind") },
+      { tech: "Tailwind", color: "bg-teal-600" },
       { tech: "React", color: React },
       { tech: "MongoDB", color: Colors("MongoDB") },
       { tech: "AWS", color: Colors("AWS") },
@@ -86,7 +86,7 @@ export const projects = [
     about:
       "A journalistic social media application bridging the gap between international issues and the public. Built with...",
     madeWith: [
-      { tech: "Tailwind", color: Colors("Tailwind") },
+      { tech: "Tailwind", color: "bg-teal-600" },
       { tech: "Next", color: Colors("Next") },
       { tech: "Firebase", color: Colors("Firebase") },
     ],
@@ -114,7 +114,7 @@ export const projects = [
     about:
       "A clinical ventilation system bringing open source software to the medical industry. Built with...",
     madeWith: [
-      { tech: "Tailwind", color: Colors("Tailwind") },
+      { tech: "Tailwind", color: "bg-teal-600" },
       { tech: "React", color: Colors("React") },
       { tech: "C++", color: Colors("C++") },
       { tech: "Python", color: Colors("Python") },
