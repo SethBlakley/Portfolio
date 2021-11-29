@@ -59,20 +59,18 @@ const Colors = (tech) => {
   }
 };
 
-const React = "bg-green-200";
-
 export const projects = [
   {
     icon: parlaylogo,
     name: "Parlay",
-    href: "http://localhost:3000/parlay",
+    href: process.env.NEXT_PUBLIC_URL + "parlay",
     iconForeground: "text-rose-700",
     iconBackground: "bg-blue-100",
     about:
       "A multi-platform video game casino and server host. Bet on yourself, your favorite streamer, play 1v1, or own your own server. Built with...",
     madeWith: [
       { tech: "Tailwind", color: "bg-teal-600" },
-      { tech: "React", color: React },
+      { tech: "React", color: "React" },
       { tech: "MongoDB", color: Colors("MongoDB") },
       { tech: "AWS", color: Colors("AWS") },
     ],
@@ -80,7 +78,7 @@ export const projects = [
   {
     icon: looplogo,
     name: "Loop Media Web",
-    href: "http://localhost:3000/loopweb",
+    href: process.env.NEXT_PUBLIC_URL + "loopweb",
     iconForeground: "text-teal-700",
     iconBackground: "bg-blue-100",
     about:
@@ -94,7 +92,7 @@ export const projects = [
   {
     icon: looplogo,
     name: "Loop Media Moble",
-    href: "http://localhost:3000/loopmobile",
+    href: process.env.NEXT_PUBLIC_URL + "loopmobile",
     iconForeground: "text-purple-700",
     iconBackground: "bg-purple-50",
     about:
@@ -118,7 +116,6 @@ export const projects = [
       { tech: "React", color: Colors("React") },
       { tech: "C++", color: Colors("C++") },
       { tech: "Python", color: Colors("Python") },
-      { tech: "Django", color: Colors("Django") },
     ],
   },
   {

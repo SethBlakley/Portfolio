@@ -26,10 +26,9 @@ export default function Parlay() {
             </div>
           </section>
           <section className="flex justify-center w-auto mt-12">
-            <div className="flex p-20 bg-white rounded-lg shadow-lg">
+            <div className="flex flex-col items-center p-20 bg-white rounded-lg shadow-lg">
               <h1>Position</h1>
               <h2>Project Management/Tech Lead</h2>
-              <div>hello</div>
             </div>
           </section>
           <section
@@ -77,9 +76,7 @@ export default function Parlay() {
                   <div className="flex">
                     {action.madeWith.map((madeWith) => {
                       return (
-                        <div
-                          className={`flex w-32 justify-center items-center mr-2 mt-2 rounded-2xl border-solid border-black border-2 p-2 ${madeWith.color}`}
-                        >
+                        <div className="flex items-center justify-center w-32 p-2 mt-2 mr-2 bg-blue-200 border-2 border-black border-solid rounded-2xl">
                           {madeWith.tech}
                         </div>
                       );

@@ -30,7 +30,9 @@ export default function Home() {
               id="name-tag"
               className="flex flex-col items-center justify-center p-5 bg-gray-500 border-4 border-white border-solid rounded-xl"
             >
-              <h1 className="flex text-white text-7xl">Seth Blakley</h1>
+              <h1 className="flex text-5xl text-white lg:text-7xl">
+                Seth Blakley
+              </h1>
               <div className="pt-2 pb-5 text-2xl text-white">
                 Software Engineer
               </div>
